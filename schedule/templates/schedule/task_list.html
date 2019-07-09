@@ -1,13 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Remainder App</title>
-</head>
-<body>
+{% extends 'schedule/base.html' %}
+
+{% block content %}
+
     {% for task in object_list %}
         <h2><a href="{%  url 'task_detail' task.pk %}">{{ task.title }}</a></h2>
         <p>{{ task.date }}</p>
     {% endfor %}
-</body>
-</html>
+
+{% endblock %}
