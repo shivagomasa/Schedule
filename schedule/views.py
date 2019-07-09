@@ -13,3 +13,7 @@ class TaskDetail(DetailView):
     model = Task
     template_name = 'schedule/task_detail.html'
 
+class NewTask(CreateView):
+    model = Task
+    template_name = 'schedule/task_new.html'
+    fields = ['title','date','time',]
