@@ -3,6 +3,7 @@ from django.views.generic import ListView,DetailView
 from django.views.generic.edit import CreateView,UpdateView,DeleteView
 from .models import Task
 from django.urls import reverse_lazy
+from .forms import DateTimeForm
 
 # Create your views here.
 
@@ -17,7 +18,7 @@ class TaskDetail(DetailView):
 class NewTask(CreateView):
     model = Task
     template_name = 'schedule/task_new.html'
-    fields = ['title','date','time',]
+    form_class = DateTimeForm
 
 class TaskEdit(UpdateView):
     model = Task
