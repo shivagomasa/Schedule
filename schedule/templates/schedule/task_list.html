@@ -1,11 +1,15 @@
 {% extends 'schedule/base.html' %}
 
 {% block content %}
-    <a href="{% url 'task_new' %}"><i class="far fa-plus-square fa-2x"></i></a>
+    <div class="task-new-icon">
+        <a href="{% url 'task_new' %}"><i class="fas fa-plus-circle fa-2x"></i></a>
+    </div>
 
     {% for task in object_list %}
-        <h2><a href="{%  url 'task_detail' task.pk %}">{{ task.title }}</a></h2>
-        <p>{{ task.date }} at {{ task.time }}</p>
+        <div class="task-list">
+            <h2><a href="{%  url 'task_detail' task.pk %}">{{ task.title }}</a></h2>
+            <p>{{ task.date }} at {{ task.time }}</p>
+        </div>
     {% endfor %}
 
 {% endblock %}

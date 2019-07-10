@@ -1,0 +1,12 @@
+.task-list h2 a {
+    text-decoration: none;
+    color: black;
+}
+
+.task-new-icon a i{
+    text-decoration: none;
+    color:black;
+}
+.task-new-icon a :hover {
+    color: #86e896;
+}
