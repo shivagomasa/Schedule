@@ -1,6 +1,7 @@
 {% extends 'schedule/base.html' %}
 
 {% block content %}
+    <a href="{% url 'task_new' %}"><i class="far fa-plus-square fa-2x"></i></a>
 
     {% for task in object_list %}
         <h2><a href="{%  url 'task_detail' task.pk %}">{{ task.title }}</a></h2>
