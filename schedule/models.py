@@ -10,6 +10,9 @@ class Task(models.Model):
     time = models.TimeField(blank=True,null=True)
     created = models.DateTimeField(default=timezone.now)
 
+    class Meta:
+        ordering = ["-created"]
+
     def __str__(self):
         return self.title
 
