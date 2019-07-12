@@ -1,12 +1,57 @@
-.task-list h2 a {
+body {
+    margin-top: 15px;
+    font-family:Consolas, monaco, monospace;
+}
+.nav-brand {
+    margin-left: 22%;
+    color: black;
+}
+.header img {
+    margin-left: -50px;
+}
+.brand {
+    margin-top: -8%;
+}
+.hr-1 {
+    width: 83%;
+    margin-left: 17%;
+}
+.vr-1 {
+    background-color: lightgrey;
+    height: 818px;
+    width: 1px;
+    margin-left: 50%;
+    margin-top: -52%;
+}
+.add-icon {
+    float: right;
+    margin-right: 10%;
     text-decoration: none;
     color: black;
 }
-
-.task-new-icon a i{
-    text-decoration: none;
-    color:black;
+.add-icon :hover {
+    color: #82C936;
 }
-.task-new-icon a :hover {
-    color: #86e896;
+.nav-brand a {
+    text-decoration: none;
+    color: black;
+}
+.content-1 {
+    margin-top: 20px;
+    margin-left: -40px;
+}
+.task-list-1 a {
+    text-decoration: none;
+    color: black;
+}
+.task-list-1 {
+    margin-bottom: 50px;
+}
+.hr-2 {
+    margin-top: -415%;
+    margin-left: -105%;
+    width: 155%;
+}
+.edit-icons i {
+    color: black;
 }

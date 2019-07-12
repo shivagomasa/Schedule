@@ -1,4 +1,4 @@
-{% load static %}
+{% load staticfiles %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,8 +12,27 @@
 
 </head>
 <body>
+    <div class="header">
+        <img src="{% static 'images/VNex1.png' %}">
+        <a class="add-icon" href="{% url 'task_new' %}"><i class="far fa-plus-square fa-2x"></i></a>
+        <div class="brand">
+            <h3 class="nav-brand"><a href="/">iRemainder</a></h3>
+            <hr class="hr-1">
+        </div>
+    </div>
+    <div class="content container">
+        <div class="row">
+            <div class="col-md-2">
+                <div class="vr-1"></div>
+                <hr class="hr-2">
 
-    {% block content %}
-    {% endblock %}
+            </div>
+            <div class="col-md-10 content-1">
+                {% block content %}
+                {% endblock %}
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>

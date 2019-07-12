@@ -2,10 +2,13 @@
 
 {% block content %}
 
-    <a href="{% url 'task_edit' task.pk %}"><i class="far fa-edit fa-2x"></i></a>
-    <a href="{% url 'task_delete' task.pk %}"><i class="far fa-trash-alt fa-2x"></i></a>
+    <div class="edit-icons">
+        <a href="{% url 'task_edit' task.pk %}"><i class="far fa-edit"></i></a>
+        <a href="{% url 'task_delete' task.pk %}"><i class="far fa-trash-alt"></i></a>
+    </div>
 
-    <h2>{{ task.title }}</h2>
-    <p>on :{{ task.date }} at {{ task.time }}</p>
-
+    <div class="task-detail">
+        <h2>{{ task.title }}</h2>
+        <p>on :{{ task.date }} at {{ task.time }}</p>
+    </div>
 {% endblock %}
