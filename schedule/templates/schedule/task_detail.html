@@ -3,8 +3,8 @@
 {% block content %}
 
     <div class="edit-icons">
-        <a href="{% url 'task_edit' task.pk %}"><i class="far fa-edit"></i></a>
-        <a href="{% url 'task_delete' task.pk %}"><i class="far fa-trash-alt"></i></a>
+        <a href="{% url 'task_edit' task.pk %}" style="color: #443f3f"><i class="far fa-edit"></i></a>
+        <a href="{% url 'task_delete' task.pk %}" style="color: red"><i class="far fa-trash-alt"></i></a>
     </div>
 
     <div class="task-detail">

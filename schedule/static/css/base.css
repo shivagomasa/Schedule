@@ -1,10 +1,14 @@
 body {
     margin-top: 15px;
-    font-family:Consolas, monaco, monospace;
+    font-family: 'Tangerine', 'Inconsolata', 'Droid Sans', serif;
+    font-size: 48px;
 }
 .nav-brand {
     margin-left: 22%;
     color: black;
+}
+.nav-brand :hover {
+    color: #82C936;
 }
 .header img {
     margin-left: -50px;
